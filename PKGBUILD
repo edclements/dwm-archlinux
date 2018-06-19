@@ -17,7 +17,7 @@ source=(http://dl.suckless.org/dwm/dwm-$pkgver.tar.gz
 	config.h
 	dwm.desktop)
 md5sums=('f0b6b1093b7207f89c2a90b848c008ec'
-         '8c776cfc426d5642129a88218016625c'
+         '2f68073631e7da2765398cf5cfb6ce8f'
          '939f403a71b6e85261d09fc3412269ee')
 
 prepare() {
