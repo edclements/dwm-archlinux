@@ -1,16 +1,27 @@
 /* See LICENSE file for copyright and license details. */
 
+#define DARK
+
 /* appearance */
 static const char *fonts[] = {
 	"monospace:size=10"
 };
 static const char dmenufont[]       = "monospace:size=10";
-static const char normbordercolor[] = "#444444";
-static const char normbgcolor[]     = "#222222";
-static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#005577";
-static const char selbgcolor[]      = "#005577";
-static const char selfgcolor[]      = "#eeeeee";
+#ifdef LIGHT
+static const char normbordercolor[] = "#fdf6e3";
+static const char normbgcolor[]     = "#fdf6e3";
+static const char normfgcolor[]     = "#839496";
+static const char selbordercolor[]  = "#586e75";
+static const char selbgcolor[]      = "#586e75";
+static const char selfgcolor[]      = "#fdf6e3";
+#else
+static const char normbordercolor[] = "#002b36";
+static const char normbgcolor[]     = "#002b36";
+static const char normfgcolor[]     = "#657b83";
+static const char selbordercolor[]  = "#93a1a1";
+static const char selbgcolor[]      = "#93a1a1";
+static const char selfgcolor[]      = "#002b36";
+#endif
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
