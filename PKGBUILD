@@ -11,13 +11,13 @@ url="http://dwm.suckless.org"
 arch=('i686' 'x86_64')
 license=('MIT')
 options=(zipman)
-depends=('libx11' 'libxinerama' 'libxft' 'freetype2' 'dmenu' 'tmux' 'st')
+depends=('libx11' 'libxinerama' 'libxft' 'freetype2' 'dmenu' 'tmux' 'st' 'slock')
 install=dwm.install
 source=(http://dl.suckless.org/dwm/dwm-$pkgver.tar.gz
 	config.h
 	dwm.desktop)
 md5sums=('9929845ccdec4d2cc191f16210dd7f3d'
-         '2f68073631e7da2765398cf5cfb6ce8f'
+         '54e3ed752d6696d744d209635938b363'
          '939f403a71b6e85261d09fc3412269ee')
 
 prepare() {
